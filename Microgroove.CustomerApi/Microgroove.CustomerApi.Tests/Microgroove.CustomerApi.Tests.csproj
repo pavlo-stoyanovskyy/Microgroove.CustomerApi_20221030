@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="1 - Presentation Layer\Function\" />
+    <Folder Include="2 - Business Layer\BusinessLogic\" />
+    <Folder Include="3 - Persistence, Integration Layer\AvatarsAccess\" />
+    <Folder Include="4 - CrossCutting Layer\Infrastructure\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0-preview-20221003-04" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Microgroove.CustomerApi.BusinessLogic\Microgroove.CustomerApi.BusinessLogic.csproj" />
+    <ProjectReference Include="..\Microgroove.CustomerApi.DataAccess\Microgroove.CustomerApi.DataAccess.csproj" />
+    <ProjectReference Include="..\Microgroove.CustomerApi.Function\Microgroove.CustomerApi.Function.csproj" />
+    <ProjectReference Include="..\Microgroove.CustomerApi.AvatarsAccess\Microgroove.CustomerApi.AvatarsAccess.csproj" />
+    <ProjectReference Include="..\Microgroove.CustomerApi.Infrastructure\Microgroove.CustomerApi.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

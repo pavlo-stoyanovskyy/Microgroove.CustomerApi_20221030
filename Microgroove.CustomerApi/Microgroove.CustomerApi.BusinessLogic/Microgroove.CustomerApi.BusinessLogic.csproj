@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extend" Version="1.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Microgroove.CustomerApi.DataAccess\Microgroove.CustomerApi.DataAccess.csproj" />
+    <ProjectReference Include="..\Microgroove.CustomerApi.AvatarsAccess\Microgroove.CustomerApi.AvatarsAccess.csproj" />
+  </ItemGroup>
+
+</Project>
